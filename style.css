@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-
+    background: #f7f5f0;
 }
 
 
@@ -58,7 +58,8 @@ main {
 
 .card {
     width: 90%;
-    box-shadow: 10px 10px 10px 5px;
+    background-color: white;
+    border-radius: 6px;
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 30px;
@@ -67,8 +68,12 @@ main {
     padding-right: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
+    border-bottom: 4px solid #ccc;
 
+}
 
+.card:hover {
+    border-bottom: 4px solid aquamarine;
 }
 
 .hid {
@@ -95,4 +100,53 @@ main {
 
 .skill li:nth-child(even) {
     background-color: #B0B8B4FF;
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+}
+
+a.twitter {
+    background-image: url(images/twitter.svg);
+
+}
+
+a.linkdIn {
+    background-image: url(images/linkedin.svg);
+
+}
+
+a.github {
+    background-image: url(images/github.svg);
+}
+
+a.social:hover {
+    opacity: 1;
+}
+
+.clearfix {
+    clear: both;
 }
