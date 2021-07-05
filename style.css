@@ -81,7 +81,7 @@ main {
 }
 
 .skill {
-    display: flex;
+    display: inline-block;
     list-style: none;
     text-align: center;
 
@@ -91,6 +91,7 @@ main {
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
+    float: left;
 }
 
 .skill li:nth-child(odd) {
